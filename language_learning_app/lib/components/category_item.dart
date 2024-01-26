@@ -8,6 +8,7 @@ class category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 15),
       alignment: Alignment.centerLeft,
       height: 70,
       width: double.infinity,
