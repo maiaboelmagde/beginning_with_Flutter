@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:language_learning_app/models/numberModel.dart';
 
 class num_category extends StatelessWidget {
-  num_category({this.img_name, this.text1, this.text2});
-  String? img_name;
-  String? text1;
-  String? text2;
+  num_category({required this.my_num});
+
+  Number my_num;
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +14,18 @@ class num_category extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            child: Image.asset(img_name!),
+            child: Image.asset(my_num.imgName),
             color: Color(0xFFFDF5DD),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                text1!,
+                my_num.jpName,
                 style: TextStyle(color: Colors.white, fontSize: 30),
               ),
               Text(
-                text2!,
+                my_num.enName,
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
             ],
