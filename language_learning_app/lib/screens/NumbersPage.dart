@@ -8,43 +8,53 @@ class numberspage extends StatelessWidget {
     Number(
         imgName: 'assets/images/numbers/number_one.png',
         jpName: 'ichi',
-        enName: 'one'),
+        enName: 'one',
+        sound: 'sounds/numbers/number_one_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_two.png',
         jpName: 'ni',
-        enName: 'two'),
+        enName: 'two',
+        sound: 'sounds/numbers/number_two_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_three.png',
         jpName: 'san',
-        enName: 'three'),
+        enName: 'three',
+        sound: 'sounds/numbers/number_three_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_four.png',
         jpName: 'shi',
-        enName: 'four'),
+        enName: 'four',
+        sound: 'sounds/numbers/number_four_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_five.png',
         jpName: 'go',
-        enName: 'five'),
+        enName: 'five',
+        sound: 'sounds/numbers/number_five_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_six.png',
         jpName: 'roku',
-        enName: 'six'),
+        enName: 'six',
+        sound: 'sounds/numbers/number_six_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_seven.png',
         jpName: 'shichi ou nana',
-        enName: 'seven'),
+        enName: 'seven',
+        sound: 'sounds/numbers/number_seven_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_eight.png',
         jpName: 'hachi',
-        enName: 'eight'),
+        enName: 'eight',
+        sound: 'sounds/numbers/number_eight_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_nine.png',
         jpName: 'ku',
-        enName: 'nine'),
+        enName: 'nine',
+        sound: 'sounds/numbers/number_nine_sound.mp3'),
     Number(
         imgName: 'assets/images/numbers/number_ten.png',
         jpName: 'jū',
-        enName: 'ten')
+        enName: 'ten',
+        sound: 'sounds/numbers/number_ten_sound.mp3')
   ];
 
   @override
@@ -52,7 +62,7 @@ class numberspage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Numbers"),
-          backgroundColor: Color(0xFF49332A),
+          backgroundColor: const Color(0xFF49332A),
         ),
         body: ListView.builder(
             itemCount: numbers.length,
