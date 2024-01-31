@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning_app/components/category_item.dart';
 import 'package:language_learning_app/screens/NumbersPage.dart';
+import 'package:language_learning_app/screens/colorPage.dart';
 import 'package:language_learning_app/screens/familymembersPage.dart';
 
 class homePage extends StatelessWidget {
@@ -10,8 +11,8 @@ class homePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF49332A),
-        title: Text(
+        backgroundColor: const Color(0xFF49332A),
+        title: const Text(
           "TUKU",
         ),
       ),
@@ -19,30 +20,34 @@ class homePage extends StatelessWidget {
         children: [
           category(
             text: "Numbers",
-            color: Color(0xFFF79531),
+            color: const Color(0xFFF79531),
             ontap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return numberspage();
+                return const numberspage();
               }));
             },
           ),
           category(
             text: "Family Members",
-            color: Color(0xFFF528032),
+            color: const Color(0xFF528032),
             ontap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return familymembersPage();
+                return const familymembersPage();
               }));
             },
           ),
           category(
             text: "Colors",
-            color: Color(0xFFF7D40A2),
-            ontap: () {},
+            color: const Color(0xFF7D40A2),
+            ontap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const colorPage();
+              }));
+            },
           ),
           category(
             text: "Phases",
-            color: Color(0xFFF47A5CB),
+            color: const Color(0xFF47A5CB),
             ontap: () {},
           ),
         ],
