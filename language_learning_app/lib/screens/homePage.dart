@@ -3,6 +3,7 @@ import 'package:language_learning_app/components/category_item.dart';
 import 'package:language_learning_app/screens/NumbersPage.dart';
 import 'package:language_learning_app/screens/colorPage.dart';
 import 'package:language_learning_app/screens/familymembersPage.dart';
+import 'package:language_learning_app/screens/phasesPage.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});
@@ -48,7 +49,11 @@ class homePage extends StatelessWidget {
           category(
             text: "Phases",
             color: const Color(0xFF47A5CB),
-            ontap: () {},
+            ontap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return phasesPage();
+              }));
+            },
           ),
         ],
       ),
